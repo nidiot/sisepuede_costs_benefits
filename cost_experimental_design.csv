@@ -1,0 +1,57 @@
+uncertainty,include,type,scalar_min,scalar_max,output_variables_regexp,notes
+u_scalar_value_of_ecosystem_services,1,linear,0.1,2,cb:lndu:ecosystem_services:forests:,deeply uncertainy and controversial
+u_scalar_cost_of_agrc_lvst_productivity,1,linear,0.5,10,^cb:.*:technical_cost:increase_productivity:X$,"deeply uncertain, coarse guess"
+u_scalar_cost_of_infrastructure_sanitation,1,linear,0.5,1.5,"cb:wali:technical_cost:sanitation:imp_rural|cb:wali:technical_cost:sanitation:safeman_rural|cb:wali:technical_cost:sanitation:imp_urban|cb:wali:technical_cost:sanitation:safeman_urban
+",
+u_scalar_cost_of_enteric_fermentation,1,linear,0.25,1,cb:lvst:technical_cost:ent_ferm_mgmt:X,"uncertain, affected by future"
+u_scalar_cost_of_reforestation,1,linear,0.5,1.5,cb:lndu:technical_cost:rehabilitate_forests:X|cb:lndu:technical_cost:silvopasture:X|cb:lndu:technical_cost:all_secondary_forests:X,unknown
+u_scalar_cost_of_clinker_substitution,1,linear,0.5,1.5,cb:ippu:technical_savings:clinker:X,unknown
+u_scalar_cost_of_transmission,1,linear,0.2,2,cb:entc:technical_cost:electricity:transmission,"deeply uncertain, wide range"
+u_scalar_cost_of_producer_food_waste_avoided,1,linear,0.5,1.5,cb:agrc:technical_cost:producer_food_waste:X,"deeply uncertain, wide range"
+u_scalar_cons_ag_land_values,1,linear,0,1.5,cb:agrc:consumer_savings:cons_ag_land_value:X,deeply uncertain want to include possibility of no value
+u_scalar_cons_ag_technical_savings,1,linear,-0.5,1.5,cb:agrc:technical_savings:cons_ag:X,deeply uncertain want to include possibility of no value or even cost
+u_scalar_cost_of_abating_fgtv,1,linear,0.5,1.5,cb:fgtv:technical_cost:,uncertain
+u_scalar_value_of_air_pollution,1,linear,0.5,1.5,air_pollution,IMF - could vary
+u_scalar_value_of_water_pollution,1,linear,0.1,1,water_pollution,deeply uncertain
+u_scalar_value_of_congestion,1,linear,0.5,1.5,congestion,IMF - could vary
+u_scalar_value_of_road_safety,1,linear,0.5,1.5,road_safety,IMF - could vary
+u_scalar_value_of_safe_sanitation,1,linear,0.5,1.5,safe_sanitation,UN - could vary
+u_scalar_value_of_ending_open_dumping,1,linear,1,3,cb:waso:env_pollution:open_dumping:X,"deeply uncertain, underestimate"
+u_scalar_cost_of_waste_sector,1,linear,0.5,1.5,cb:waso:technical_cost:waste_collection|cb:waso:technical_cost:waste_management:biogas|cb:waso:technical_cost:waste_management:compost|cb:waso:technical_cost:waste_management:incinerated|cb:waso:technical_cost:waste_management:landfilled|cb:waso:technical_cost:waste_management:recycled|technical_cost:waste_to_energy|cb:trww:technical_cost:wastewater_treatment,"unknown, vary"
+u_scalar_cost_of_electricity_capex,1,linear,0.5,1.5,cb:entc:technical_cost:electricity:capex,"unknown, vary"
+u_scalar_cost_of_electricity_opex,1,linear,0.5,1.5,cb:entc:technical_cost:electricity:opex,"unknown, vary"
+u_scalar_cost_of_air_freight,1,linear,0.5,1,cb:trns:system_cost:freight_transport:aviation,worth exploring over
+u_scalar_cost_of_rail_freight,1,linear,1,2,cb:trns:system_cost:freight_transport:rail,worth exploring over
+u_scalar_cost_of_aviation,1,linear,0.5,1.5,cb:trns:system_cost:passenger_transport:aviation,worth exploring over
+u_scalar_cost_of_transit,1,linear,0.1,10,cb:trns:system_cost:passenger_transport:public,worth exploring over
+omit,0,linear,0.5,1,cb:inen:technical_cost:fuel_switch:lo_heat,Rissman is pretty decent estimation
+omit,0,linear,0.5,1,cb:inen:technical_savings:fuel_switch:lo_heat,Rissman is pretty decent estimation
+omit,0,linear,0.33,2,cb:inen:technical_cost:fuel_switch:hi_heat,
+omit,0,linear,1,3,cb:inen:technical_savings:fuel_switch:hi_heat,
+u_scalar_cost_inen_fuel_switch,1,linear,0.5,2,cb:inen:technical_cost:fuel_switch:all,
+u_scalar_savings_inen_fuel_switch,1,linear,1,2,cb:inen:technical_savings:fuel_switch:all,
+u_scalar_cost_inen_efficiency,1,linear,0.5,1.8,cb:inen:technical_cost:efficiency:X,"could be a fraction of it as UN suggests, or more as in canada"
+omit,0,,,,cb:trns:technical_cost:electrification:LDV,
+omit,0,,,,cb:trns:technical_savings:electrification:LDV,
+u_scalar_cost_electrify_rail_cost,1,linear,0.5,2,cb:trns:technical_cost:electrification:rail,
+u_scalar_cost_electrify_rail_savings,1,linear,0.5,2,cb:trns:technical_savings:electrification:rail,
+u_scalar_trns_cost_fuel_switch_maritime,1,linear,0.5,2,cb:trns:technical_cost:fuel_switch:maritime,
+u_scalar_trns_cost_fuel_switch_hdv_cost,1,linear,0.5,2,cb:trns:technical_cost:electrification:hdv_vehicles,
+u_scalar_trns_cost_fuel_switch_hdv_savings,1,linear,0.5,2,cb:trns:technical_savings:electrification:hdv_vehicles,
+u_scalar_trns_cost_fuel_switch_hdv_charger,1,linear,0.5,1,cb:trns:technical_cost:electrification:hdv_charger,
+omit,0,,,,cb:trns:technical_cost:efficiency:electric,
+omit,0,,,,cb:trns:technical_cost:efficiency:non_electric,
+u_scalar_cost_scoe_efficiency,1,linear,0.5,2,cb:scoe:technical_cost:efficiency:appliance|cb:scoe:technical_cost:efficiency:building_shell,
+omit,0,,,,cb:scoe:technical_cost:fuel_switch:heat_pumps,
+omit,0,,,,cb:scoe:technical_savings:fuel_switch:heat_pumps,
+u_scalar_reduce_electricity_losses,1,linear,0.5,2,cb:entc:technical_cost:loss_reduction:electricity,
+omit,0,,,,cb:ippu:technical_savings:clinker:X,
+u_scalar_fgas_abatement_cost,1,linear,0.5,2,cb:ippu:technical_cost:abating_N2O_and_F_Gases:X|cb:ippu:technical_cost:abating_gases:n2o|cb:ippu:technical_cost:abating_gases:hfcs|cb:ippu:technical_cost:abating_gases:pfcs|cb:ippu:technical_cost:abating_gases:other_fgases,
+u_scalar_food_waste_tech_cost,1,linear,0.5,1,cb:waso:technical_cost:consumer_food_waste:X,
+omit,0,,,,cb:waso:consumer_savings:consumer_food_waste:X,
+omit,0,,,,cb:ccsq:technical_cost:direct_air_capture:X,
+u_scalar_tech_cost_rice,1,linear,-1,2,cb:agrc:technical_cost:rice_mgmt:X,
+omit,0,,,,cb:agrc:technical_savings:producer_food_waste:X,
+u_scalar_diets_human_health,1,linear,0.2,2,cb:pflo:human_health:better_diets:X,
+u_scalar_diets_groceries,1,linear,-1,1,cb:pflo:consumer_savings:better_diets:X,
+u_scalar_cost_ccs,1,linear,0.5,1.5,cb:ippu:technical_cost:ccs,

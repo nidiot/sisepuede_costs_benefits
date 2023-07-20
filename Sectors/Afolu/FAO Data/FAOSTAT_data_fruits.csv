@@ -1,0 +1,228 @@
+﻿Domain Code,Domain,Area Code (M49),Area,Element Code,Element,Item Code (CPC),Item,Year Code,Year,Months Code,Months,Unit,Value,Flag,Flag Description
+PP,Producer Prices,28,Antigua and Barbuda,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,2292.2,A,Official figure
+PP,Producer Prices,28,Antigua and Barbuda,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,2346.3,A,Official figure
+PP,Producer Prices,28,Antigua and Barbuda,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,1705,A,Official figure
+PP,Producer Prices,28,Antigua and Barbuda,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,4262.6,A,Official figure
+PP,Producer Prices,52,Barbados,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,2326,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1341,Apples,2019,2019,7021,Annual value,USD,379,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,377.7,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,280,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,249.7,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1315,Figs,2019,2019,7021,Annual value,USD,1003.9,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1330,Grapes,2019,2019,7021,Annual value,USD,573.2,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,263.6,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,293.6,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,141.4,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1319,"Other tropical fruits, n.e.c.",2019,2019,7021,Annual value,USD,504.9,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,235,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1345,Peaches and nectarines,2019,2019,7021,Annual value,USD,531.6,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1342.01,Pears,2019,2019,7021,Annual value,USD,644.8,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1359.01,Persimmons,2019,2019,7021,Annual value,USD,441.6,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,199.2,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1342.02,Quinces,2019,2019,7021,Annual value,USD,1178.1,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,257.4,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,171,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1341,Apples,2019,2019,7021,Annual value,USD,746.5,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1343,Apricots,2019,2019,7021,Annual value,USD,1209.5,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,2985.7,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,1305.3,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1344.02,Cherries,2019,2019,7021,Annual value,USD,2120.7,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1355.02,Cranberries,2019,2019,7021,Annual value,USD,5784.5,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1315,Figs,2019,2019,7021,Annual value,USD,2154.8,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1330,Grapes,2019,2019,7021,Annual value,USD,1645.1,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1352,Kiwi fruit,2019,2019,7021,Annual value,USD,1186.5,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,825.5,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,561.5,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1345,Peaches and nectarines,2019,2019,7021,Annual value,USD,1171,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1342.01,Pears,2019,2019,7021,Annual value,USD,701.8,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1359.01,Persimmons,2019,2019,7021,Annual value,USD,965,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1346,Plums and sloes,2019,2019,7021,Annual value,USD,712.2,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,760.1,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1342.02,Quinces,2019,2019,7021,Annual value,USD,731.2,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1353.01,Raspberries,2019,2019,7021,Annual value,USD,3813.9,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1354,Strawberries,2019,2019,7021,Annual value,USD,1835.6,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,808.6,A,Official figure
+PP,Producer Prices,152,Chile,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,656.7,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1341,Apples,2019,2019,7021,Annual value,USD,1636,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,1437.5,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,430.2,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,598.6,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1315,Figs,2019,2019,7021,Annual value,USD,1821.3,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1330,Grapes,2019,2019,7021,Annual value,USD,846.6,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,685.8,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,1157.3,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,337.7,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,528.3,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1345,Peaches and nectarines,2019,2019,7021,Annual value,USD,1334.4,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1342.01,Pears,2019,2019,7021,Annual value,USD,1491.3,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,568.8,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1346,Plums and sloes,2019,2019,7021,Annual value,USD,668.1,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1354,Strawberries,2019,2019,7021,Annual value,USD,1697.4,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,688.8,A,Official figure
+PP,Producer Prices,170,Colombia,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,291.4,A,Official figure
+PP,Producer Prices,188,Costa Rica,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,458.8,A,Official figure
+PP,Producer Prices,188,Costa Rica,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,359.2,A,Official figure
+PP,Producer Prices,188,Costa Rica,5532,Producer Price (USD/tonne),1313,Plantains and cooking bananas,2019,2019,7021,Annual value,USD,164,A,Official figure
+PP,Producer Prices,188,Costa Rica,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,391,A,Official figure
+PP,Producer Prices,214,Dominican Republic,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,388.4,A,Official figure
+PP,Producer Prices,214,Dominican Republic,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,430.9,A,Official figure
+PP,Producer Prices,214,Dominican Republic,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,888.9,A,Official figure
+PP,Producer Prices,214,Dominican Republic,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,602.6,A,Official figure
+PP,Producer Prices,214,Dominican Republic,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,247,A,Official figure
+PP,Producer Prices,214,Dominican Republic,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,834.9,A,Official figure
+PP,Producer Prices,214,Dominican Republic,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,1680.8,A,Official figure
+PP,Producer Prices,214,Dominican Republic,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,142.5,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,1957,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,322.3,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,597.9,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,631.7,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,306.2,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,502.1,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1313,Plantains and cooking bananas,2019,2019,7021,Annual value,USD,274,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1354,Strawberries,2019,2019,7021,Annual value,USD,1024.8,A,Official figure
+PP,Producer Prices,218,Ecuador,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,711.5,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,828.1,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,500.5,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,395.8,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,276.5,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,462,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,563.9,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,323.2,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,213.2,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,1193.9,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,507,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,1784.5,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,516.5,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,387.5,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,718.5,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1329,"Other citrus fruit, n.e.c.",2019,2019,7021,Annual value,USD,1047.1,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1319,"Other tropical fruits, n.e.c.",2019,2019,7021,Annual value,USD,1227.3,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,815.8,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,2008.1,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1313,Plantains and cooking bananas,2019,2019,7021,Annual value,USD,692.9,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1346,Plums and sloes,2019,2019,7021,Annual value,USD,632.2,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,403.2,A,Official figure
+PP,Producer Prices,308,Grenada,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,1678.7,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,661.1,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,2206.5,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1344.02,Cherries,2019,2019,7021,Annual value,USD,1973.8,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,2765.3,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,1326.9,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,861.3,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,926,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,501.6,A,Official figure
+PP,Producer Prices,328,Guyana,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,451,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,660.1,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,1510.7,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,4620.7,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,2385.4,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,1217.2,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,1444.2,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1313,Plantains and cooking bananas,2019,2019,7021,Annual value,USD,828.9,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,900.1,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,1372.7,A,Official figure
+PP,Producer Prices,388,Jamaica,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,1082.2,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1341,Apples,2019,2019,7021,Annual value,USD,572.7,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1343,Apricots,2019,2019,7021,Annual value,USD,440.6,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,1116.4,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1355.01,Blueberries,2019,2019,7021,Annual value,USD,2875.1,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,253,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1344.02,Cherries,2019,2019,7021,Annual value,USD,3832.6,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1314,Dates,2019,2019,7021,Annual value,USD,3001.9,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1315,Figs,2019,2019,7021,Annual value,USD,1178.2,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1330,Grapes,2019,2019,7021,Annual value,USD,1212.2,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,336.6,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1356,Locust beans (carobs),2019,2019,7021,Annual value,USD,441.2,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,236.9,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,103.7,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,302.8,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1345,Peaches and nectarines,2019,2019,7021,Annual value,USD,546.4,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1342.01,Pears,2019,2019,7021,Annual value,USD,212.3,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1359.01,Persimmons,2019,2019,7021,Annual value,USD,816.1,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,232.4,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1346,Plums and sloes,2019,2019,7021,Annual value,USD,317.2,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,177,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1342.02,Quinces,2019,2019,7021,Annual value,USD,516.7,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1353.01,Raspberries,2019,2019,7021,Annual value,USD,2076.5,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1354,Strawberries,2019,2019,7021,Annual value,USD,1240.6,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,158.3,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,190.1,A,Official figure
+PP,Producer Prices,591,Panama,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,372.2,A,Official figure
+PP,Producer Prices,591,Panama,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,178,A,Official figure
+PP,Producer Prices,591,Panama,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,466.4,A,Official figure
+PP,Producer Prices,591,Panama,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,382.8,A,Official figure
+PP,Producer Prices,591,Panama,5532,Producer Price (USD/tonne),1313,Plantains and cooking bananas,2019,2019,7021,Annual value,USD,400.2,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,246.8,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,489.2,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,212.2,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1330,Grapes,2019,2019,7021,Annual value,USD,1026,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,280.2,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,378.4,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,475.2,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1345,Peaches and nectarines,2019,2019,7021,Annual value,USD,993,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,282.5,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,148.7,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1354,Strawberries,2019,2019,7021,Annual value,USD,2622.3,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,307.1,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,531.7,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1341,Apples,2019,2019,7021,Annual value,USD,257.6,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1343,Apricots,2019,2019,7021,Annual value,USD,1743.1,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,965.2,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,270.7,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1344.02,Cherries,2019,2019,7021,Annual value,USD,957.5,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1314,Dates,2019,2019,7021,Annual value,USD,635.7,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1315,Figs,2019,2019,7021,Annual value,USD,744.5,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1330,Grapes,2019,2019,7021,Annual value,USD,733.8,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,280.7,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,242.7,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,176.2,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,281.1,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1345,Peaches and nectarines,2019,2019,7021,Annual value,USD,659.1,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1342.01,Pears,2019,2019,7021,Annual value,USD,614.3,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,203.6,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1346,Plums and sloes,2019,2019,7021,Annual value,USD,562,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,158.8,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1342.02,Quinces,2019,2019,7021,Annual value,USD,501.6,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1354,Strawberries,2019,2019,7021,Annual value,USD,612.5,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,340.3,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,200.6,A,Official figure
+PP,Producer Prices,659,Saint Kitts and Nevis,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,1428.9,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,2075.9,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,2038.9,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,2366.7,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,1385.2,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,1487,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1319,"Other tropical fruits, n.e.c.",2019,2019,7021,Annual value,USD,1611.1,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,2285.2,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,1063,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,1392.6,A,Official figure
+PP,Producer Prices,662,Saint Lucia,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,1792.6,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1311,Avocados,2019,2019,7021,Annual value,USD,1676.1,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1312,Bananas,2019,2019,7021,Annual value,USD,813.9,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,2656.2,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1316,"Mangoes, guavas and mangosteens",2019,2019,7021,Annual value,USD,1111.6,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,1532.6,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1329,"Other citrus fruit, n.e.c.",2019,2019,7021,Annual value,USD,1609,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1319,"Other tropical fruits, n.e.c.",2019,2019,7021,Annual value,USD,1457.5,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,875.6,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,1354.3,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1313,Plantains and cooking bananas,2019,2019,7021,Annual value,USD,834,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,1202.7,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,1609,A,Official figure
+PP,Producer Prices,740,Suriname,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,602,A,Official figure
+PP,Producer Prices,780,Trinidad and Tobago,5532,Producer Price (USD/tonne),1317,Papayas,2019,2019,7021,Annual value,USD,806.9,A,Official figure
+PP,Producer Prices,780,Trinidad and Tobago,5532,Producer Price (USD/tonne),1318,Pineapples,2019,2019,7021,Annual value,USD,969.7,A,Official figure
+PP,Producer Prices,780,Trinidad and Tobago,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,430.8,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1341,Apples,2019,2019,7021,Annual value,USD,879.3,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1229,Cantaloupes and other melons,2019,2019,7021,Annual value,USD,964.4,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1330,Grapes,2019,2019,7021,Annual value,USD,1205.5,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1322,Lemons and limes,2019,2019,7021,Annual value,USD,530.4,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1323,Oranges,2019,2019,7021,Annual value,USD,465.2,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1345,Peaches and nectarines,2019,2019,7021,Annual value,USD,1205.5,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1342.01,Pears,2019,2019,7021,Annual value,USD,964.4,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1346,Plums and sloes,2019,2019,7021,Annual value,USD,1205.5,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1321,Pomelos and grapefruits,2019,2019,7021,Annual value,USD,723.3,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1342.02,Quinces,2019,2019,7021,Annual value,USD,482.2,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1324,"Tangerines, mandarins, clementines",2019,2019,7021,Annual value,USD,489.4,A,Official figure
+PP,Producer Prices,858,Uruguay,5532,Producer Price (USD/tonne),1221,Watermelons,2019,2019,7021,Annual value,USD,434,A,Official figure
+,,,,,,,,,,,,,697.35,,

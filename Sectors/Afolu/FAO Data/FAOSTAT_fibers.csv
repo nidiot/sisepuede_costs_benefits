@@ -1,0 +1,12 @@
+﻿Domain Code,Domain,Area Code (M49),Area,Element Code,Element,Item Code (CPC),Item,Year Code,Year,Months Code,Months,Unit,Value,Flag,Flag Description
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1922.01,"Jute, raw or retted",2019,2019,7021,Annual value,USD,507,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1929.9,"Other fibre crops, raw, n.e.c.",2019,2019,7021,Annual value,USD,528,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1921.01,"Seed cotton, unginned",2019,2019,7021,Annual value,USD,588.5,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1929.05,"Sisal, raw",2019,2019,7021,Annual value,USD,755.3,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1929.06,"Agave fibres, raw, n.e.c.",2019,2019,7021,Annual value,USD,990,A,Official figure
+PP,Producer Prices,222,El Salvador,5532,Producer Price (USD/tonne),1922.01,"Jute, raw or retted",2019,2019,7021,Annual value,USD,1210,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1921.01,"Seed cotton, unginned",2019,2019,7021,Annual value,USD,614.5,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1921.02,"Cotton lint, ginned",2019,2019,7021,Annual value,USD,1762.6,A,Official figure
+PP,Producer Prices,600,Paraguay,5532,Producer Price (USD/tonne),1921.01,"Seed cotton, unginned",2019,2019,7021,Annual value,USD,352.5,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1921.01,"Seed cotton, unginned",2019,2019,7021,Annual value,USD,872,A,Official figure
+,,,,,,,,,,,,,684.9,,

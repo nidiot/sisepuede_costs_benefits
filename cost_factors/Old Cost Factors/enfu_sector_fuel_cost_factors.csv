@@ -1,0 +1,6 @@
+difference_variable,multiplier,multiplier unit,annual change,output_variable_name,output_display_name,sum,natural multiplier units,display_notes,internal_notes
+totalvalue_enfu_fuel_consumed_ccsq_*,-1000000,N/A,1,cb:ccsq:fuel_cost:X:X,Fuel Cost (CCS),1,N/A,Costs of electricity and fuels are endogenously calcuated in NemoMod,none
+totalvalue_enfu_fuel_consumed_inen_*,-1000000,N/A,1,cb:inen:fuel_cost:X:X,Fuel Cost (Industrial Energy),1,N/A,Costs of electricity and fuels are endogenously calcuated in NemoMod,none
+totalvalue_enfu_fuel_consumed_scoe_*,-1000000,N/A,1,cb:scoe:fuel_cost:X:X,Fuel Cost (Buildings),1,N/A,Costs of electricity and fuels are endogenously calcuated in NemoMod,none
+totalvalue_enfu_fuel_consumed_entc_*,-1000000,N/A,1,cb:entc:fuel_cost:X:X,Fuel Cost (Energy Production),1,N/A,Costs of electricity and fuels are endogenously calcuated in NemoMod,none
+totalvalue_enfu_fuel_consumed_trns_*,-1000000,N/A,1,cb:trns:fuel_cost:X:X,Fuel Cost (Transport),1,N/A,Costs of electricity and fuels are endogenously calcuated in NemoMod,none

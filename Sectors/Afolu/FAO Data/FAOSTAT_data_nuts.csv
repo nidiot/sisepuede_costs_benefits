@@ -1,0 +1,12 @@
+﻿Domain Code,Domain,Area Code (M49),Area,Element Code,Element,Item Code (CPC),Item,Year Code,Year,Months Code,Months,Unit,Value,Flag,Flag Description
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1377,"Brazil nuts, in shell",2019,2019,7021,Annual value,USD,1046.4,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1372,"Cashew nuts, in shell",2019,2019,7021,Annual value,USD,705.9,A,Official figure
+PP,Producer Prices,76,Brazil,5532,Producer Price (USD/tonne),1376,"Walnuts, in shell",2019,2019,7021,Annual value,USD,2488.8,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1372,"Cashew nuts, in shell",2019,2019,7021,Annual value,USD,274,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1373,"Chestnuts, in shell",2019,2019,7021,Annual value,USD,1505,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1375,"Pistachios, in shell",2019,2019,7021,Annual value,USD,4681,A,Official figure
+PP,Producer Prices,484,Mexico,5532,Producer Price (USD/tonne),1376,"Walnuts, in shell",2019,2019,7021,Annual value,USD,3831.2,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1372,"Cashew nuts, in shell",2019,2019,7021,Annual value,USD,196.5,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1373,"Chestnuts, in shell",2019,2019,7021,Annual value,USD,197.3,A,Official figure
+PP,Producer Prices,604,Peru,5532,Producer Price (USD/tonne),1376,"Walnuts, in shell",2019,2019,7021,Annual value,USD,500.8,A,Official figure
+,,,,,,,,,,,,,876.15,,

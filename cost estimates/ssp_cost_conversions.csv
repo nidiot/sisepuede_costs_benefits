@@ -1,0 +1,3 @@
+original_amount,original_region,original_year,target_region,target_year,notes,source
+2800,GLOBAL,2007,LAC_AVERAGE,2019,"Costanza et al. (2011) estimate the value of ecosystem services provided by a variety of global land types. Here, we use the value of ecosystem services provided by forests, excluding the value provided for food and climate. Tropical and temperate/boreal forests average out to approximately $2800/ha in 2007 dollars.","Costanza, Robert, Ralph d'Arge, Rudolf De Groot, Stephen Farber, Monica Grasso, Bruce Hannon, Karin Limburg et al. ""The value of the world's ecosystem services and natural capital."" nature 387, no. 6630 (1997): 253-260."
+60,LAC_AVERAGE,2012,LAC_AVERAGE,2019,,
