@@ -100,8 +100,6 @@ cb_create_futures<-function(futures_definitions, num_futures){
   #Second create a dataframe of variables to which the uncertainties apply
   vars_df<-data.frame()
   for(u in 1:num_uncertainties){
-    message(u)
-    message(paste(futures_definitions$output_variables_regexp[u], collapse=" "))
     applicable_vars<-SSP_GLOBAL_list_of_cbvars[grep(futures_definitions$output_variables_regexp[u], SSP_GLOBAL_list_of_cbvars)]
     if (length(applicable_vars) > 0){
     tmpdf<-data.frame(uncertainty=futures_definitions$uncertainty[u],variable=applicable_vars)
@@ -705,7 +703,7 @@ cb_calculate_transformation_costs_in_strategy<-function(data, strategy_specific_
                   strategy_specific_definitions$sum[s],
                   SSP_GLOBAL_list_of_variables)
     results<-append(results, list(r))
-    message(paste0("Num cols: ", ncol(r)))
+    #message(paste0("Num cols: ", ncol(r)))
     
   }
   #append all the outputs

@@ -3,7 +3,7 @@
 #To run this script, please update the working directory and the paths in cb_config.R and here
 
 #-------------SET WORKING DIRECTORY AND PATHS----------
-setwd('~/Desktop/LAC_Decarb_Git/ssp_cost_benefits/Main/')
+setwd('~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/')
 
 #Paths to data files
 #path_to_model_results<-'/Users/nidhi/Desktop/LAC Model Results and Visualizations/'
@@ -15,6 +15,8 @@ setwd('~/Desktop/LAC_Decarb_Git/ssp_cost_benefits/Main/')
 path_to_model_results<-'/Users/nidhi/Desktop/FUTURES TEST WITH WORKING DATA/'
 data_filename<-paste0(path_to_model_results, 'sisepuede_results_WIDE_scaled.csv') #path to model output runs
 
+#path_to_model_results<-'/Users/nidhi/Downloads/Futures Test for Edmundo/'
+#data_filename<-paste0(path_to_model_results, '811.csv') 
 
 
 primary_filename<-paste0(path_to_model_results, 'ATTRIBUTE_PRIMARY.csv') #path to model output primary filename
@@ -159,6 +161,12 @@ economy_wide_results<-results_all_pp[!grepl('sector_specific', results_all_pp$va
 economy_wide_results<-results_all_pp[!grepl('waste_to_energy_value', results_all_pp$variable),]
 results_net_benefit_and_ghg_7<-cb_net_benefits_and_emissions(data, economy_wide_results, 0.07)
 write.csv(results_net_benefit_and_ghg_7, file=net_benefit_ghg_output_filename)
+
+results_present<-cb_present_value_of_each_cost(economy_wide_results, 0.07)
+
+
+#Edmundo, replace this line with whatever output writing you want to do
+write.csv(results_present, 'economy_wide_present_results.csv')
 
 #---- EDMUNDO, YOUR FOR LOOP SHOULD END HERE----
 

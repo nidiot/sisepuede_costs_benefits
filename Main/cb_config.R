@@ -17,7 +17,7 @@ options(dplyr.summarise.inform = FALSE)
 #paths to git repositories
 lac_decarbonization_git_path<-'~/Desktop/LAC_Decarb_Git/lac_decarbonization/'
 sisepuede_data_git_path<-'~/Desktop/LAC_Decarb_Git/sisepuede_data/'
-ssp_costs_benefits_git_path<-'~/Desktop/LAC_Decarb_Git/ssp_cost_benefits/'
+ssp_costs_benefits_git_path<-'~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/'
 
 #add newlines to csvs for smooth running
 system('../cost_factors/append_newlines_to_csvs.sh')
