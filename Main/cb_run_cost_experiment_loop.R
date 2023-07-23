@@ -1,17 +1,6 @@
 #--------More libraries
 library(tools)
 
-#---------Paths to key files and lists of files-------
-futures_file<-'../futures.csv'
-variable_int_ext_file<-'../variable_definitions_int_ext.csv'
-
-#This is artificial list of economy wide results filepaths. Replace with your own list
-tmp1<-'~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/economy_wide_present_results_test1.csv'
-tmp2<-'~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/economy_wide_present_results_test2.csv'
-
-cb_filenames_list<-c(tmp1,tmp2)
-nfiles<-length(cb_filenames_list)
-
 #---------Generate and write to file a cost experimental design-------
 #You can skip this if you already have a cost experimental design
 num_futures<-1000
@@ -30,6 +19,16 @@ one_future$variable[duplicated(one_future$variable)]
 write.csv(futures, futures_file)
 
 
+#---------Paths to key files and lists of files-------
+futures_file<-'../futures.csv'
+variable_int_ext_file<-'../variable_definitions_int_ext.csv'
+
+#This is artificial list of economy wide results filepaths. Replace with your own list
+tmp1<-'~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/economy_wide_present_results_test1.csv'
+tmp2<-'~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/economy_wide_present_results_test2.csv'
+
+cb_filenames_list<-c(tmp1,tmp2)
+nfiles<-length(cb_filenames_list)
 #---------Edmundo, your for loop should start here ------------------
 
 #----------Get the file with futures definitions
@@ -37,11 +36,12 @@ futures<-read.csv(futures_file)
 
 for (f in 1:nfiles){
 
-#----------Read Economy-Wide Results----------------------------------
+#----------Read Economy-Wide Present Results for one file----------------------------------
   ecr<-read.csv(cb_filenames_list[f])
 
 #----------Attach a future and apply scalars to those results---------
   #Get the matching cb_future, starting from 0
+  #If you want future_id=0 to be matched with nominal values with cost code, make future_id=0 the first in your list
   future_f<-futures[futures$cbfuture_id==(f-1),]
   ecr_merged<-merge(ecr, future_f, by=('variable'), all.x=TRUE)
   
@@ -92,3 +92,4 @@ for (f in 1:nfiles){
 #----------Edmundo, your for loop should end here.
   
 }
+
