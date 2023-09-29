@@ -6,17 +6,12 @@
 setwd('~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/')
 
 #Paths to data files
-#path_to_model_results<-'/Users/nidhi/Desktop/LAC Model Results and Visualizations/'
-#data_filename<-paste0(path_to_model_results, 'sisepuede_results_WIDE_scaled.csv') #path to model output runs
-
-#path_to_model_results<-'/Users/nidhi/Desktop/SSP Baseline Futures Test/'
-#data_filename<-paste0(path_to_model_results, 'sisepuede_results_WIDE_scaled.csv') #path to model output runs
-
-path_to_model_results<-'/Users/nidhi/Desktop/FUTURES TEST WITH WORKING DATA/'
+path_to_model_results<-'/Users/nidhi/Desktop/LAC Model Results and Visualizations/'
 data_filename<-paste0(path_to_model_results, 'sisepuede_results_WIDE_scaled.csv') #path to model output runs
 
-#path_to_model_results<-'/Users/nidhi/Downloads/Futures Test for Edmundo/'
-#data_filename<-paste0(path_to_model_results, '811.csv') 
+#path_to_model_results<-'/Users/nidhi/Desktop/FUTURES TEST WITH WORKING DATA/'
+#data_filename<-paste0(path_to_model_results, 'sisepuede_results_WIDE_scaled.csv') #path to model output runs
+
 
 
 primary_filename<-paste0(path_to_model_results, 'ATTRIBUTE_PRIMARY.csv') #path to model output primary filename
@@ -96,6 +91,7 @@ cols_to_grep<-c(
   'energy_demand_enfu_total_fuel_',
 'nemomod_entc_annual_production_by_technology',
 'qty_waso'
+, 'trns'
 
 )
 trimmed_data_long<-ssp_trim_reshape(data, cols_to_grep)
