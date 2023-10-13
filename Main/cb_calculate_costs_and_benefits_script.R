@@ -6,19 +6,25 @@
 setwd('~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/')
 
 #Paths to data files
-path_to_model_results<-'/Users/nidhi/Desktop/LAC Model Results and Visualizations/'
-data_filename<-paste0(path_to_model_results, 'sisepuede_results_WIDE_scaled.csv') #path to model output runs
+#path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/sisepuede_summary_results_run_sisepuede_run_2023-09-28T11;36;58.322719/'
+path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 10_10/'
 
-#path_to_model_results<-'/Users/nidhi/Desktop/FUTURES TEST WITH WORKING DATA/'
-#data_filename<-paste0(path_to_model_results, 'sisepuede_results_WIDE_scaled.csv') #path to model output runs
+data_filename<-paste0(path_to_model_results, 
+                      list.files(path=path_to_model_results, 
+                                 pattern = glob2rx('sisepuede_results_WIDE_scaled*'))) #path to model output runs
+
 
 
 
 primary_filename<-paste0(path_to_model_results, 'ATTRIBUTE_PRIMARY.csv') #path to model output primary filename
 strategy_filename<-paste0(path_to_model_results, 'ATTRIBUTE_STRATEGY.csv') #path to model output strategy filename
-cb_output_filename<-paste0(path_to_model_results,'cost_benefit_results.csv') #path to write results
-net_benefit_ghg_output_filename<-paste0(path_to_model_results,'net_benefit_net_ghg.csv') #path to write results
-cb_futures_output_filename<-paste0(path_to_model_results,'cost_benefits_in_futures.csv') #path to write results
+
+
+
+cb_output_filename<-paste0(path_to_model_results,'cost_benefit_results.csv') #path to write detailed results
+cb_economywide_filename<-paste0(path_to_model_results,'economy_wide_cost_benefit_results.csv') #path to write results for only variables that are economy wide (no sector specific results)
+net_benefit_ghg_output_filename<-paste0(path_to_model_results,'net_benefit_net_ghg.csv') #path to write net benefit and net ghg summaries
+cb_futures_output_filename<-paste0(path_to_model_results,'cost_benefits_in_futures.csv') #path to write results for costs adn benefits in each future
 trimmed_data_filename<-paste0(path_to_model_results, 'sisepuede_results_TRIMMED_LONG.csv') #path to trimmed data for Tableau
 
 
@@ -150,11 +156,13 @@ results_all_pp$value[results_all_pp$strategy_code=='PFLO:ALL_NO_STOPPING_DEFORES
 #when this move should probably not occur
 results_all_pp$value[results_all_pp$strategy_code=='PFLO:SUPPLY_SIDE_TECH' & grepl('cb:waso:technical_cost:waste_management', results_all_pp$variable)==TRUE]<-0
 
+#Write
 write.csv(results_all_pp, file=cb_output_filename)
 
 #aggregate net benefit results using a 7% discount rate to get a single file of emisisons nad NPV by country, future, strategy
 economy_wide_results<-results_all_pp[!grepl('sector_specific', results_all_pp$variable),]
-economy_wide_results<-results_all_pp[!grepl('waste_to_energy_value', results_all_pp$variable),]
+economy_wide_results<-economy_wide_results[!grepl('waste_to_energy_value', economy_wide_results$variable),]
+
 results_net_benefit_and_ghg_7<-cb_net_benefits_and_emissions(data, economy_wide_results, 0.07)
 write.csv(results_net_benefit_and_ghg_7, file=net_benefit_ghg_output_filename)
 
@@ -162,7 +170,8 @@ results_present<-cb_present_value_of_each_cost(economy_wide_results, 0.07)
 
 
 #Edmundo, replace this line with whatever output writing you want to do
-write.csv(results_present, 'economy_wide_present_results.csv')
+write.csv(results_present, cb_economywide_filename)
+
 
 #---- EDMUNDO, YOUR FOR LOOP SHOULD END HERE----
 

@@ -121,10 +121,16 @@ cb_ippu_inen_ccs_old<-function(data, strategy_code_tx, strategy_code_base, diff_
 }
 
 #--------------FGTV: ALL COSTS ------------
+#This function calculates the cost of abating fugitive emissions.
+#(1) calculates the "fugitive emissions intensity" as the fugitive emissions per unit of energy consumed in each time period in the baseline
+#(2) calculates the "expected fugitive emissions" in a transformed future by multiplying that intensity by the energy consumed in the transformed future
+#(3) calculates "fugitive emissions abated"  as difference between "expected fugitive emissions" and actual emissions
+#(4) calculates "cost of abatement" as quantity abated * cost of abatement
 cb_fgtv_abatement_costs<-function(data, strategy_code_tx, strategy_code_base, diff_var, output_vars, 
                         output_mults, change_in_multiplier, country_specific_multiplier,
                         scale_impact, scaling, list_of_variables){
   
+  #(1) FUGITIVE EMISSIONS INTENSITY
   energy_vars<-c('energy_demand_enfu_total_fuel_coal', 'energy_demand_enfu_total_fuel_oil', 'energy_demand_enfu_total_fuel_natural_gas')
   fgtv_vars<-SSP_GLOBAL_list_of_variables[grep(glob2rx('emission_co2e_*_fgtv_fuel_*'), SSP_GLOBAL_list_of_variables)]
   
@@ -141,7 +147,7 @@ cb_fgtv_abatement_costs<-function(data, strategy_code_tx, strategy_code_base, di
   
   
   data_merged_base<-merge(energy, fgtv, by=c('region', 'time_period', 'strategy_code', 'fuel'), suffixes=c('.en_base', '.fg_base'))
-    
+  
   #2. Get the fugitive emissions per PJ of coal and oil together in the transformed future
   energy_tx<-cb_get_data_from_wide_to_long(data, strategy_code_tx, energy_vars)
   energy_tx$fuel<-str_replace(energy_tx$variable, 'energy_demand_enfu_total_', '')
@@ -157,6 +163,7 @@ cb_fgtv_abatement_costs<-function(data, strategy_code_tx, strategy_code_base, di
   #3. Merge the two together
   data_merged<-merge(data_merged_tx, data_merged_base, by=c('region', 'time_period', 'fuel'), suffixes=c('.tx', '.base'))
   
+  #(2/3) FUGITIVE EMISSIONS INTENSITY and EXPECTED FUGITIVE EMISSIONS
   #4. Calculate the fugitive emissions per unit demand in the baseline and apply it to the transformed future
   data_merged$fgtv_co2e_per_demand_base<-data_merged$value.fg_base/data_merged$value.en_base
   data_merged$fgtv_co2e_expected_per_demand<-data_merged$value.en_tx*data_merged$fgtv_co2e_per_demand_base
@@ -172,6 +179,10 @@ cb_fgtv_abatement_costs<-function(data, strategy_code_tx, strategy_code_base, di
   #7. Get columns
   data_merged$strategy_code<-data_merged$strategy_code.tx
   data_merged<-data_merged[, SSP_GLOBAL_COLNAMES_OF_RESULTS]
+  
+  #8. If tehre are NANs or NAs in the value, replace them with 0.
+  data_merged$value[is.nan(data_merged$value)]<-0
+  
   return(data_merged)
 
 }

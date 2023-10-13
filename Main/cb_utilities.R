@@ -119,6 +119,21 @@ cb_create_futures<-function(futures_definitions, num_futures){
 
 #-------4. Post Process Data-----------
 
+cb_present_value_of_each_cost_unsummed<-function(results, discount_rate){
+  
+  #trim the dataset from 2025 to 2050
+  results<-results[results$time_period >= SSP_GLOBAL_TIME_PERIOD_TX_START &
+                     results$time_period < SSP_GLOBAL_TIME_PERIODS,]
+  
+  #discount each cost
+  #TABLEAU CODE:
+  #[Value] / (1+[Discount Rate])^([Year] - [Cost Discounted To Year])
+  results$value<-results$value/((1+discount_rate)^(results$time_period - SSP_GLOBAL_COST_YEAR))
+  
+  return(results)
+}
+
+
 cb_present_value_of_each_cost<-function(results, discount_rate){
   
   #trim the dataset from 2025 to 2050
@@ -126,6 +141,8 @@ cb_present_value_of_each_cost<-function(results, discount_rate){
                      results$time_period < SSP_GLOBAL_TIME_PERIODS,]
   
   #discount each cost
+  #TABLEAU CODE:
+  #[Value] / (1+[Discount Rate])^([Year] - [Cost Discounted To Year])
   results$value<-results$value/((1+discount_rate)^(results$time_period - SSP_GLOBAL_COST_YEAR))
   
   #summarize the net benefits over the entire time series
@@ -255,8 +272,9 @@ cb_process_interactions<-function(res, st2tx, pp_instructions){
                       list_of_interactions[i], ':', paste(tx_interacting$transformation_code, collapse=', '))) 
       }
       
-      if ((SSP_PRINT_STRATEGIES) & (length(tx_interacting$transformation_code) == 0)){
-        message(paste('No interactions, skipping...', strategy_code))
+      if (length(tx_interacting$transformation_code) == 0){
+        if (SSP_PRINT_STRATEGIES) 
+          message(paste('No interactions, skipping...', strategy_code))
         next
         
       }
@@ -531,9 +549,9 @@ cb_apply_cost_factors<-function(data, definition, cost_factors, list_of_variable
     cost_line<-cost_factors[r,]  
     if (SSP_PRINT_TOP_LINE_VARS) message(paste0('---------Costs for: ', cost_line$output_variable_name))
     
-    if (cost_line$output_variable_name == 'cb:trww:water_pollution:wastewater_treatment:COD'){
-      message("UH OH 2")
-    }
+#    if (cost_line$output_variable_name == 'cb:trww:water_pollution:wastewater_treatment:COD'){
+#      message("UH OH 2")
+#    }
     
     result<-cb_wrapper('cb_difference_between_two_strategies',
                        data, 
@@ -590,9 +608,9 @@ cb_calculate_system_costs<-function(data, strategy_cost_definitions_param, syste
                        ' for cost factor: ', 
                        system_cost_definitions$system_cost_filename[c]))
       
-      if (system_cost_definitions$system_cost_filename[c] == 'trww_treatment_water_pollution_cost_factors.csv'){
-        message("Uh OH!")
-      }
+#      if (system_cost_definitions$system_cost_filename[c] == 'trww_treatment_water_pollution_cost_factors.csv'){
+#        message("Uh OH!")
+#      }
       
       do_call_args<-list(data, strategy_cost_definitions[d,], data.frame(cost_factors_list[c]), list_of_variables)
       r<-do.call(system_cost_definitions$cb_function[c], do_call_args)
