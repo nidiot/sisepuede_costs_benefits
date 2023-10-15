@@ -10,6 +10,7 @@
 #---> would still need to remove electricity from the sector specific fuel costs
 #---> and have those be on their own, and also have ag and ww as fractions. oof.
 
+#------------Source files and set paths------------
 setwd('~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/')
 source('cb_config.R')
 source('cb_utilities.R')
@@ -47,6 +48,7 @@ data<-merged_data
 temp_data_cols<-colnames(data)
 cols_to_keep<-temp_data_cols[!grepl('totalvalue.*furnace_gas', temp_data_cols)]
 cols_to_keep<-cols_to_keep[!grepl(glob2rx('totalvalue_*_fuel_consumed_*_fuel_crude'), cols_to_keep)]
+
 data = subset(data, select = cols_to_keep )
 
 #add calculation of total TLUs to data

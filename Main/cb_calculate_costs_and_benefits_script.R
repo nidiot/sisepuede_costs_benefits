@@ -7,7 +7,10 @@ setwd('~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/')
 
 #Paths to data files
 #path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/sisepuede_summary_results_run_sisepuede_run_2023-09-28T11;36;58.322719/'
-path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 10_10/'
+#path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 10_10/'
+#path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 7_10/'
+#path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Intensity 10.13/'
+path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Core Runs 10_14/'
 
 data_filename<-paste0(path_to_model_results, 
                       list.files(path=path_to_model_results, 
@@ -52,6 +55,7 @@ data<-merged_data
 temp_data_cols<-colnames(data)
 cols_to_keep<-temp_data_cols[!grepl('totalvalue.*furnace_gas', temp_data_cols)]
 cols_to_keep<-cols_to_keep[!grepl(glob2rx('totalvalue_*_fuel_consumed_*_fuel_crude'), cols_to_keep)]
+cols_to_keep<-cols_to_keep[!grepl(glob2rx('totalvalue_*_fuel_consumed_*_fuel_electricity'), cols_to_keep)] #10.13 ADDED THIS SO SECTOR FUELS EXCLUDE ELECTRICITY
 data = subset(data, select = cols_to_keep )
 
 #add calculation of total TLUs to data
@@ -137,7 +141,7 @@ results_all<-rbind(results_system, results_tx)
 
 SSP_GLOBAL_list_of_cbvars<-unique(results_all$variable)
 
-#-------------POST PROCESS RESULTS---------------
+#-------------POST PROCESS SIMULATION RESULTS---------------
 #Post process interactions among strategies that affect the same variables
 postprocess_interactions<-read.csv('../strategy_interaction_definitions.csv')
 results_all_pp<-cb_process_interactions(results_all, strategy2tx, postprocess_interactions)
@@ -158,6 +162,9 @@ results_all_pp$value[results_all_pp$strategy_code=='PFLO:SUPPLY_SIDE_TECH' & gre
 
 #Write
 write.csv(results_all_pp, file=cb_output_filename)
+
+#-------------DISCOUNTING AND AGGREGATION---------------
+
 
 #aggregate net benefit results using a 7% discount rate to get a single file of emisisons nad NPV by country, future, strategy
 economy_wide_results<-results_all_pp[!grepl('sector_specific', results_all_pp$variable),]

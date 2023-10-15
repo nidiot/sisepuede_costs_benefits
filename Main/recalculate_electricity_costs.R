@@ -8,7 +8,8 @@ source('cb_strategy_specific_functions.R')
 source('general_ssp_utilities.R')
 
 #Paths to data files
-path_to_model_results<-'~/Desktop/LAC Model Results and Visualizations/'
+path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 7_10/'
+
 
 data_filename<-paste0(path_to_model_results, 
                       list.files(path=path_to_model_results, 
@@ -95,6 +96,56 @@ t<-entc_sector_consumption_and_cost %>%
   )
 entc_sector_consumption_and_cost<-t
 
+#8. Reallocate entc costs to the other consuming sectors.
+#8a. Get gas recovery values
+gas_recovery_value<-cb_data[grep('waste_to_energy_value', cb_data$variable),]
+gas_recovery_value_total<-gas_recovery_value %>% 
+  group_by(time_period, region, strategy_code) %>%
+  summarise(total_gas_recovery_value= sum(value))
+entc_sector_consumption_and_cost<-merge(entc_sector_consumption_and_cost, gas_recovery_value_total, by=c('strategy_code', 'region', 'time_period'))
+
+#8b. Get residual cost values
+entc_cost_cols<-grep('entc_cost_energy_demand', colnames(entc_sector_consumption_and_cost))
+entc_sector_consumption_and_cost$entc_cost_energy_demand_enfu_subsector_total_pj_residual_fuel_electricity<-
+  entc_sector_consumption_and_cost$total_entc_costs-rowSums(entc_sector_consumption_and_cost[,entc_cost_cols])
+
+#8c. Get quantity to reallocate, entc - gas recovery + residual
+entc_sector_consumption_and_cost$cost_to_reallocate<-entc_sector_consumption_and_cost$entc_cost_energy_demand_enfu_subsector_total_pj_entc_fuel_electricity+
+  entc_sector_consumption_and_cost$entc_cost_energy_demand_enfu_subsector_total_pj_residual_fuel_electricity-
+  entc_sector_consumption_and_cost$total_gas_recovery_value
+
+#8d. Find fractions from end use sectors
+electricity_consumption_end_use_sector_vars<-electricity_consumption_sector_vars[!grepl('entc', electricity_consumption_sector_vars)]
+entc_sector_consumption_and_cost$total_end_use_consumption<-rowSums(entc_sector_consumption_and_cost[,electricity_consumption_end_use_sector_vars])
+t<-entc_sector_consumption_and_cost %>% 
+  mutate(
+    across(all_of(electricity_consumption_end_use_sector_vars), ~ .x/total_end_use_consumption*cost_to_reallocate, .names = "reallocated_cost_{.col}_reallocated")
+  )
+entc_sector_consumption_and_cost<-t
+
+#9. Reassign these as electricity total values in our cb cost file
+reallocated_cost_vars<-colnames(entc_sector_consumption_and_cost)[grep('reallocated_cost_', colnames(entc_sector_consumption_and_cost))]
+sector_energy_cost_vars<-colnames(entc_sector_consumption_and_cost)[grep('entc_cost_energy_demand', colnames(entc_sector_consumption_and_cost))]
+sector_energy_cost_vars<-sector_energy_cost_vars[!grepl('_entc_', sector_energy_cost_vars) & !grepl('residual', sector_energy_cost_vars)]
+
+reallocated_electricity_variables<-c(SSP_GLOBAL_COLNAMES_OF_RESULTS, sector_energy_cost_vars, reallocated_cost_vars)
+reallocated_electricity_variables<-reallocated_electricity_variables[-c(5:8)]
+renamed_electricity_variables<-str_replace(reallocated_electricity_variables,
+                                           'entc_cost_energy_demand_enfu_subsector_total_pj_', 'cb:')
+renamed_electricity_variables<-str_replace(renamed_electricity_variables, 'reallocated_cost_energy_demand_enfu_subsector_total_pj_', 'cb:')
+renamed_electricity_variables<-str_replace(renamed_electricity_variables, '_fuel_electricity_reallocated', ':sector_specific:reallocated_entc_cost')
+renamed_electricity_variables<-str_replace(renamed_electricity_variables, '_fuel_electricity', ':sector_specific:incurred_entc_cost')
+
+new_costs<-entc_sector_consumption_and_cost[,reallocated_electricity_variables]
+colnames(new_costs)<-renamed_electricity_variables
+
+new_cb_rows<-melt(new_costs, id.vars=c('time_period', 'region', 'strategy_code', 'future_id'))
+new_cb_rows$difference_variable<-'none'
+new_cb_rows$difference_value<-'0'
+
+cb_data_new<-rbind(cb_data, new_cb_rows)
+
 #X. Write out the data
-write.csv(entc_sector_consumption_and_cost, 'entc_sector_consumption_and_cost.csv')
+write.csv(entc_sector_consumption_and_cost, paste0(path_to_model_results,'entc_sector_consumption_and_cost.csv'))
+write.csv(cb_data_new, paste0(path_to_model_results, 'reallocated_entc_cost_benefit_results.csv'))
 

@@ -386,6 +386,8 @@ cb_lvst_enteric<-function(data, strategy_code_tx, strategy_code_base, diff_var, 
   data_merged$variable<-paste0(output_vars, data_merged$variable)
   data_merged$value<-data_merged$difference_value*output_mults
   data_merged<-data_merged[, SSP_GLOBAL_COLNAMES_OF_RESULTS]
+  
+  return(data_merged)
 }
 
 
