@@ -310,6 +310,8 @@ cb_process_interactions<-function(res, st2tx, pp_instructions){
 return(res)
   
 }
+
+
 #-------3. Apply Costs and Benefits (cb_functions)-----------
 
 #This function calculates the costs adn benefits as a multiplier applied to the

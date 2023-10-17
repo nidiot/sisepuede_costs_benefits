@@ -1,0 +1,9 @@
+﻿Name,Cost Variable,Intensity Variable
+Enteric fermentation costs,cb:lvst:technical_cost:ent_ferm_mgmt:,ef_lvst_entferm_cattle_nondairy_kg_ch4_head
+Manure management costs,cb:lsmm:technical_cost:manure_management,frac_lvst_mm_buffalo_anaerobic_digester
+Agriculture productivity,cb:agrc:technical_cost:increase_productivity:X,yf_agrc_bevs_and_spices_tonne_ha
+Livestock productivity,cb:lvst:technical_cost:increase_productivity:X,scalar_lvst_carrying_capacity
+Rice management costs,cb:agrc:technical_cost:rice_mgmt:X,ef_agrc_anaerobicdom_rice_kg_ch4_ha
+Electricity transmission loss reduction costs,cb:entc:technical_cost:loss_reduction:electricity,frac_enfu_transmission_loss_fuel_electricity
+Conservation agriculture - land value,cb:agrc:consumer_savings:cons_ag_land_value:X,frac_agrc_crop_residues_burned
+Conservation agriculture - technical savings,cb:agrc:technical_savings:cons_ag:X,frac_agrc_crop_residues_burned

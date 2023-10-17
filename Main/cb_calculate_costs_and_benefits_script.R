@@ -160,6 +160,16 @@ results_all_pp$value[results_all_pp$strategy_code=='PFLO:ALL_NO_STOPPING_DEFORES
 #when this move should probably not occur
 results_all_pp$value[results_all_pp$strategy_code=='PFLO:SUPPLY_SIDE_TECH' & grepl('cb:waso:technical_cost:waste_management', results_all_pp$variable)==TRUE]<-0
 
+
+#SHIFT any stray costs incurred from 2015 to 2025 to 2025 and 2035
+results_all_pp_before_shift<-results_all_pp #keep copy of earlier results just in case/for comparison
+res_pre2025<-results_all_pp[results_all_pp$time_period<SSP_GLOBAL_TIME_PERIOD_TX_START,] #get the subset of early costs
+res_pre2025$variable<-paste0(res_pre2025$variable, "_shifted", res_pre2025$time_period+SSP_GLOBAL_TIME_PERIOD_0) #create a new variable so they can be recognized as shifted costs
+res_pre2025$time_period<-res_pre2025$time_period+SSP_GLOBAL_TIME_PERIOD_TX_START #shift the time period
+results_all_pp<-rbind(results_all_pp, res_pre2025) #paste the results
+results_all_pp[results_all_pp$time_period<SSP_GLOBAL_TIME_PERIOD_TX_START,c('value')]<-0 #set pre-2025 costs to 0
+
+
 #Write
 write.csv(results_all_pp, file=cb_output_filename)
 

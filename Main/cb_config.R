@@ -28,7 +28,7 @@ SSP_GLOBAL_COLNAMES_OF_RESULTS<-c('strategy_code', 'future_id', 'region', 'time_
 SSP_GLOBAL_SIMULATION_IDENTIFIERS<-c('primary_id', 'strategy_code', 'region', 'time_period', 'future_id')
 SSP_GLOBAL_SIMULATION_LONG_COLS<-c('primary_id', 'strategy_code', 'region', 'time_period', 'variable', 'value')
 
-
+SSP_GLOBAL_TIME_PERIOD_0<-2015
 SSP_GLOBAL_TIME_PERIOD_TX_START<-10 #11
 SSP_GLOBAL_TIME_PERIODS<-36
 SSP_GLOBAL_TIME_PERIOD_2023<-8 #9

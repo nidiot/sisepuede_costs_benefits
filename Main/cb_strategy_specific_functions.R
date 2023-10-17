@@ -70,7 +70,7 @@ cb_ippu_inen_ccs<-function(data, strategy_code_tx, strategy_code_base, diff_var,
   #merge the two datasets
   data_merged<-merge(ccs_fractions, prod_qty, by=c('region', 'strategy_code', 'time_period', 'variable'),suffixes=c('ccs', ''))
   
-  #multiply the production quantity by te fractions
+  #multiply the production quantity by the fractions
   data_merged$difference_value<-data_merged$application_rate * data_merged$value
   data_merged$difference_variable<-data_merged$variable
   
