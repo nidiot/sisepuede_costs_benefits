@@ -8,8 +8,8 @@ u_scalar_cost_of_reforestation,1,linear,0.5,1.5,cb:lndu:technical_cost:rehabilit
 u_scalar_cost_of_clinker_substitution,1,linear,0.5,1.5,cb:ippu:technical_savings:clinker:X,unknown
 u_scalar_cost_of_transmission,1,linear,0.2,2,cb:entc:technical_cost:electricity:transmission,"deeply uncertain, wide range"
 u_scalar_cost_of_producer_food_waste_avoided,1,linear,0.5,1.5,cb:agrc:technical_cost:producer_food_waste:X,"deeply uncertain, wide range"
-u_scalar_cons_ag_land_values,1,linear,0,1.5,cb:agrc:consumer_savings:cons_ag_land_value:X,deeply uncertain want to include possibility of no value
-u_scalar_cons_ag_technical_savings,1,linear,-0.5,1.5,cb:agrc:technical_savings:cons_ag:X,deeply uncertain want to include possibility of no value or even cost
+u_scalar_cons_ag_land_values,0,linear,0,1.5,cb:agrc:consumer_savings:cons_ag_land_value:X,deeply uncertain want to include possibility of no value
+u_scalar_cons_ag_technical_savings,0,linear,-0.5,1.5,cb:agrc:technical_savings:cons_ag:X,deeply uncertain want to include possibility of no value or even cost
 u_scalar_cost_of_abating_fgtv,1,linear,0.5,1.5,cb:fgtv:technical_cost:,uncertain
 u_scalar_value_of_air_pollution,1,linear,0.5,1.5,air_pollution,IMF - could vary
 u_scalar_value_of_water_pollution,1,linear,0.1,1,water_pollution,deeply uncertain

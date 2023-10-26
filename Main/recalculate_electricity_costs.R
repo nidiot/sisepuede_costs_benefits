@@ -8,7 +8,7 @@ source('cb_strategy_specific_functions.R')
 source('general_ssp_utilities.R')
 
 #Paths to data files
-path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 7_10/'
+path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Core Runs 10_18/'
 
 
 data_filename<-paste0(path_to_model_results, 
@@ -60,6 +60,8 @@ SSP_GLOBAL_list_of_strategies<-unique(data$strategy_code)
 SSP_GLOBAL_list_of_variables<-setdiff(colnames(data), SSP_GLOBAL_SIMULATION_IDENTIFIERS)
 
 #-------------Get electricity consumption and costs----------
+#cb_data<-results_all_pp
+temp_data_cols<-colnames(data)
 
 #1. Get total electricity production
 electricity_production_variables<-temp_data_cols[grep('nemomod_entc_annual_production_by_technology_pp_', temp_data_cols)]
@@ -141,7 +143,7 @@ colnames(new_costs)<-renamed_electricity_variables
 
 new_cb_rows<-melt(new_costs, id.vars=c('time_period', 'region', 'strategy_code', 'future_id'))
 new_cb_rows$difference_variable<-'none'
-new_cb_rows$difference_value<-'0'
+new_cb_rows$difference_value<-0
 
 cb_data_new<-rbind(cb_data, new_cb_rows)
 

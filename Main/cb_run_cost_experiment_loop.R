@@ -16,11 +16,11 @@ unique_vars<-unique(one_future$variable)
 length(unique_vars)==length(one_future$variable)
 one_future$variable[duplicated(one_future$variable)]
 
+futures_file<-'../futures.csv'
 write.csv(futures, futures_file)
 
 
 #---------Paths to key files and lists of files-------
-futures_file<-'../futures.csv'
 variable_int_ext_file<-'../variable_definitions_int_ext.csv'
 
 #This is artificial list of economy wide results filepaths. Replace with your own list

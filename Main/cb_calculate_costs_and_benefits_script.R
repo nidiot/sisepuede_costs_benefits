@@ -10,7 +10,7 @@ setwd('~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/')
 #path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 10_10/'
 #path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 7_10/'
 #path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Intensity 10.13/'
-path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Core Runs 10_14/'
+path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Core Runs 10_18/'
 
 data_filename<-paste0(path_to_model_results, 
                       list.files(path=path_to_model_results, 
@@ -72,7 +72,6 @@ data<-merge(data, pop_livestock_summarized, by=c('primary_id', 'time_period', 'r
 #replace any lagging references to "PFLO:SOCIOTECHNICAL" with "PFLO:CHANGE_CONSUMPTION"
 data$strategy_code[data$strategy_code=='PFLO:SOCIOTECHNICAL']<-'PFLO:CHANGE_CONSUMPTION'
 
-
 SSP_GLOBAL_list_of_strategies<-unique(data$strategy_code)
 SSP_GLOBAL_list_of_variables<-setdiff(colnames(data), SSP_GLOBAL_SIMULATION_IDENTIFIERS)
 
@@ -100,6 +99,8 @@ cols_to_grep<-c(
   'energy_demand_enfu_subsector_total_pj_',
   'energy_demand_enfu_total_fuel_',
 'nemomod_entc_annual_production_by_technology',
+'nemomod_entc_total_annual_generation_capacity',
+'nemomod_entc_discounted_capital_investment_',
 'qty_waso'
 , 'trns'
 
