@@ -75,6 +75,8 @@ for (f in 1:nfiles){
   ecr_merged_int_ext<-merge(ecr_merged, variable_int_ext, by='variable')
   ecr_merged_int<-ecr_merged_int_ext[ecr_merged_int_ext$i_or_e=='Internal',]
   
+  
+  
 
   ecr_summarized_int<- ecr_merged_int %>%
     group_by(region, strategy_code, future_id, cbfuture_id) %>%

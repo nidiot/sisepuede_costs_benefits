@@ -10,11 +10,14 @@ setwd('~/Desktop/LAC_Decarb_Git/sisepuede_costs_benefits/Main/')
 #path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 10_10/'
 #path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Simulations 7_10/'
 #path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Intensity 10.13/'
-path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Core Runs 10_18/'
+#path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/LAC Decarb QA Simulations/Core Runs 10_18/'
+
+path_to_model_results<-'/Users/nidhi/OneDrive - RAND Corporation/SWCHE207 Article 6/1. Simulations/4.21/'
+
 
 data_filename<-paste0(path_to_model_results, 
                       list.files(path=path_to_model_results, 
-                                 pattern = glob2rx('sisepuede_results_WIDE_scaled*'))) #path to model output runs
+                                 pattern = glob2rx('sisepuede_results_WIDE_scaled.csv'))) #path to model output runs
 
 
 
@@ -75,6 +78,10 @@ data$strategy_code[data$strategy_code=='PFLO:SOCIOTECHNICAL']<-'PFLO:CHANGE_CONS
 SSP_GLOBAL_list_of_strategies<-unique(data$strategy_code)
 SSP_GLOBAL_list_of_variables<-setdiff(colnames(data), SSP_GLOBAL_SIMULATION_IDENTIFIERS)
 
+#-------------RUN EXPERIMENT FIXES--------------
+source('cb_experiment_specific_kludges.R')
+
+
 #-------------PRODUCE A COPY OF TRIMMED INPUT DATA FOR TABLEAU-------------------
 
 #create a column of outputs
@@ -89,6 +96,9 @@ cols_to_grep<-c(
   'demand_lvst',
   'yield_agrc',
   'pop_lvst',
+  'population_gnrl',
+  'gdp_per_capita_usd',
+  'gdp_mmm_usd',
 #  'exportsadj_lvst',
 #  'exportsadj_agrc',
 #  'emission_co2e_subsector_total',
@@ -173,6 +183,7 @@ results_all_pp[results_all_pp$time_period<SSP_GLOBAL_TIME_PERIOD_TX_START,c('val
 
 #Write
 write.csv(results_all_pp, file=cb_output_filename)
+
 
 #-------------DISCOUNTING AND AGGREGATION---------------
 
